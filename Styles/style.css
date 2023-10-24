@@ -5,7 +5,8 @@ ul{
 }
 
 .menuBurger{
-    width: 25px;
+    height: 50px;
+    display: none;
 }
 
 .bgHeader{
@@ -19,14 +20,22 @@ ul{
 @media screen and (max-width: 550px){
     h1 { display: none;}
     ul { display: none;}
-    
+
+    .menuBurger { 
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;}
 }
 
 /* Format tablette */
 @media screen and (min-width: 551px) and (max-width: 800px) {
     ul {display: none;}
     .bgHeader { background-image: url(../img/bg_footer.jpg);}
-    .menuBurger { width: 50px;}
+    
+    .menuBurger { 
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;}
 }
 
 /* Format ordinateur */
