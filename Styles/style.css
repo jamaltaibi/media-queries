@@ -1,0 +1,36 @@
+ul{
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+
+.menuBurger{
+    width: 25px;
+   display: block;
+}
+.bgHeader{
+    height: 25vh;
+    background-image: url(../img/bg_header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Format téléphone */
+@media screen and (max-width: 550px){
+    h1{ display: none;}
+    ul{display: none;}
+}
+
+/* Format tablette */
+@media screen and (min-width: 551px) and (max-width: 800px) {
+    ul {display: none;}
+    .bgHeader { background-image: url(../img/bg_footer.jpg);}
+    .menuBurger{ width: 50px;}
+}
+
+/* Format ordinateur */
+@media screen and (min-width: 801px)
+{
+    .menuBurger { display: none; }
+    
+}
